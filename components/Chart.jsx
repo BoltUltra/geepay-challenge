@@ -35,12 +35,30 @@ const chart = () => {
       </div>
       <ResponsiveContainer height={310}>
         <BarChart data={data}>
+          <defs>
+            <linearGradient id="colorSales" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#34CAA5" stopOpacity={0.8} />
+              <stop offset="95%" stopColor="#34CAA5" stopOpacity={0} />
+            </linearGradient>
+          </defs>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
-          <Tooltip />
-          <Bar dataKey="Sales" fill="#34CAA5" />
-
+          <Tooltip
+            cursor={{ fill: 'transparent' }}
+            content={({ active, payload, label }) => {
+              if (active && payload && payload.length) {
+                const data = payload[0].payload;
+                return (
+                  <div className="custom-tooltip bg-black rounded-full text-white px-10 py-2">
+                    <p style={{ color: 'white' }}>{data.Sales}</p>
+                  </div>
+                );
+              }
+              return null;
+            }}
+          />
+          <Bar dataKey="Sales" fill="url(#colorSales)" radius={[100, 100, 0, 0]} />
         </BarChart>
       </ResponsiveContainer>
     </div >
