@@ -3,7 +3,7 @@ import { Heading } from '.'
 
 const top = () => {
   return (
-    <section className='h-[23.375rem] py-4 bg-white dark:bg-[#090C2C] rounded-2xl dark:border dark:shadow overflow-hidden overflow-y-scroll md:mr-5 md:mx-0 mx-3 md:my-0 my-5 px-5'>
+    <section className='h-[23.375rem] py-4 bg-white dark:bg-[#090C2C] rounded-2xl dark:border dark:shadow overflow-hidden overflow-y-scroll lg:mr-5 lg:mx-0 md:mx-5 mx-3 lg:my-0 my-5 px-5'>
       <div className="flex items-center justify-between">
         <div className="">
           <Heading text={'Top Platform'} />

@@ -9,7 +9,7 @@ const header = () => {
           <h1 className='text-xl font-semibold'>Dashboard</h1>
         </div>
 
-        <div className='md:block hidden'>
+        <div className='lg:block hidden'>
           <div className='bg-white dark:bg-[#090C2C] dark:border flex space-x-2 px-4 h-12 items-center rounded-full w-[21.8rem]'>
             <img src="/search.svg" alt="search-icon" />
             <input type="text" name="search" id="search" placeholder='Search ...' className='placeholder:font-extralight placeholder:text-sm outline-none w-full bg-transparent' />
@@ -17,7 +17,7 @@ const header = () => {
         </div>
       </div>
       <div className='flex items-center justify-between md:pr-5 space-x-10 md:w-1/2'>
-        <div className="md:flex hidden items-center space-x-5 px-4 py-3">
+        <div className="lg:flex hidden items-center space-x-5 px-4 py-3">
           <img src="/calendar.svg" alt="bell" className='h-5 w-5 dark:invert' />
           <p>November 15, 2023</p>
         </div>

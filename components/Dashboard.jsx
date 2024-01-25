@@ -77,19 +77,19 @@ const Dashboard = () => {
         >
           {isSidebarVisible ? <img src="/close.svg" alt="" className='h-7 w-7' /> : <img src="/bars.svg" alt="" className='w-7 h-7' />}
         </button>
-        <div className='grid md:grid-cols-5'>
-          <div className='md:col-span-3'>
+        <div className='grid lg:grid-cols-5'>
+          <div className='lg:col-span-3'>
             <Chart />
           </div>
-          <div className='md:col-span-2'>
+          <div className='lg:col-span-2'>
             <Cards />
           </div>
         </div>
-        <div className='grid md:grid-cols-5 md:mb-5'>
-          <div className='md:col-span-3'>
+        <div className='grid lg:grid-cols-5 md:mb-5'>
+          <div className='lg:col-span-3'>
             <Table />
           </div>
-          <div className='md:col-span-2'>
+          <div className='lg:col-span-2'>
             <Top />
           </div>
         </div>
