@@ -1,10 +1,8 @@
-import { BoxTick } from 'iconsax-react'
 import React from 'react'
 
 const CardChart = ({ icon, chart, cardTitle, cardNumber, trend, bgColor, textColor }) => {
   return (
     <div className='md:w-auto w-[239px] md:h-auto h-[179px] border p-4 rounded-2xl space-y-2.5 bg-white dark:bg-[#090C2C] dark:text-accent'>
-      {/* <div className='border p-4 rounded-2xl space-y-2.5'> */}
       <div className='flex items-center justify-between w-full'>
         <div className="h-10 w-10 border rounded-full flex items-center justify-center">
           {icon}

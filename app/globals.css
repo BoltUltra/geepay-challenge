@@ -5,23 +5,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* width */
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -31,13 +27,11 @@
 
 .w-full.shifted {
   margin-left: 5px;
-  /* Adjust the value according to your sidebar width */
   transition: margin-left 0.3s ease-out;
 }
 
 .w-full.shifted>.md\:hidden {
   transform: translateX(-5px);
-  /* Adjust the value according to your sidebar width */
   transition: transform 0.3s ease-out;
 }
 

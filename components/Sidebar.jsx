@@ -22,19 +22,11 @@ const sidebar = () => {
           <li className='sidebar-item'><Link href='#'><Box color="#b2abab" variant="Broken" /></Link></li>
           <li className='sidebar-item'><Link href='#'><DiscountShape color="#b2abab" variant="Broken" /></Link></li>
           <li className='sidebar-item'><Link href='#'><InfoCircle color="#b2abab" variant="Broken" /></Link></li>
-          {/* <div className='bg-white rounded-full space-y-4 p-2'>
-            <button className='bg-primary rounded-full h-[30px] w-[30px] flex items-center justify-center'>
-              <img src="/brightness.svg" alt="light mode" className='cursor-pointer h-4 w-4' />
-            </button>
-            <button className='bg-white rounded-full h-[30px] w-[30px] flex items-center justify-center'>
-              <img src="/moon.svg" alt="dark mode" className='cursor-pointer h-4 w-4' />
-            </button>
-          </div> */}
+
 
           <div className='bg-white rounded-full space-y-4 p-2'>
             <button
               className={`rounded-full h-[30px] w-[30px] flex items-center justify-center dark:bg-gray-300 bg-primary`}
-              // className={`bg-${theme === 'light' ? 'primary' : 'white'} rounded-full h-[30px] w-[30px] flex items-center justify-center dark:bg-gray-300 bg-primary`}
               onClick={() => toggleTheme('light')}
             >
               <img src="/brightness.svg" alt="light mode" className='cursor-pointer h-4 w-4' />

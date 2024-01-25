@@ -14,8 +14,7 @@
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
-    "recharts": "^2.10.4",
-    "victory": "^36.8.2"
+    "recharts": "^2.10.4"
   },
   "devDependencies": {
     "@types/node": "20.11.6",
