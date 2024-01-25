@@ -3,7 +3,7 @@ import React from 'react'
 
 const CardChart = ({ icon, chart, cardTitle, cardNumber, trend, bgColor, textColor }) => {
   return (
-    <div className='md:w-auto w-[239px] md:h-auto h-[179px] border p-4 rounded-2xl space-y-2.5 bg-white'>
+    <div className='md:w-auto w-[239px] md:h-auto h-[179px] border p-4 rounded-2xl space-y-2.5 bg-white dark:bg-[#090C2C] dark:text-accent'>
       {/* <div className='border p-4 rounded-2xl space-y-2.5'> */}
       <div className='flex items-center justify-between w-full'>
         <div className="h-10 w-10 border rounded-full flex items-center justify-center">
@@ -12,8 +12,8 @@ const CardChart = ({ icon, chart, cardTitle, cardNumber, trend, bgColor, textCol
         <img src={chart} alt="chart" />
       </div>
       <div>
-        <p className='text-[#898989] text-lg font-semibold'>{cardTitle}</p>
-        <p className='text-[#3A3F51] text-2xl font-bold'>{cardNumber}</p>
+        <p className='text-[#898989] dark:text-accent text-lg font-semibold'>{cardTitle}</p>
+        <p className='text-[#3A3F51] dark:text-accent text-2xl font-bold'>{cardNumber}</p>
       </div>
       <div className='flex items-center space-x-2.5 text-xs'>
         <div className={`flex items-center space-x-1 px-2 py-1 rounded-full`} style={{ backgroundColor: bgColor, color: textColor }}>
@@ -22,7 +22,7 @@ const CardChart = ({ icon, chart, cardTitle, cardNumber, trend, bgColor, textCol
           </div>
           <p>24,5%</p>
         </div>
-        <p className='text-[#606060]'>vs. previous month</p>
+        <p className='text-[#606060] dark:text-accent'>vs. previous month</p>
       </div>
     </div>
   )

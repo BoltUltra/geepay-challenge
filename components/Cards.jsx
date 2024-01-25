@@ -5,7 +5,7 @@ import { BoxTick, Coin1, I3DRotate, ShoppingCart } from 'iconsax-react'
 const cards = () => {
   return (
     <div>
-      <div className='md:grid md:flex-none flex md:overflow-hidden overflow-x-scroll md:w-auto w-[400px] grid-cols-2 gap-4 mt-5 md:mr-5 px-3'>
+      <div className='md:grid md:flex-none flex md:overflow-hidden overflow-x-scroll md:w-auto w-[400px] grid-cols-2 gap-4 mt-5 md:mr-5 md:px-0 px-3'>
         <div>
           <CardChart
             chart={'/chart-green.svg'}

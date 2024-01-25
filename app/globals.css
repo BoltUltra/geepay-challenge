@@ -48,3 +48,7 @@
 .table-data {
   @apply whitespace-nowrap px-3 py-3 text-gray-500 md:text-sm text-xs;
 }
+
+.sidebar-item {
+  @apply h-10 w-10 px-9 border-r-2 border-r-transparent hover:border-[#0D062D] dark:hover:border-accent flex items-center justify-center;
+}

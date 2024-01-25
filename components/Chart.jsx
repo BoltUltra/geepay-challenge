@@ -20,8 +20,8 @@ const data = [
 const chart = () => {
 
   return (
-    <div className='md:text-sm text-xs md:m-5 m-3 h-[23.375rem] py-4 bg-white rounded-2xl md:px-5'>
-      <div className="flex items-center justify-between mb-4">
+    <div className='md:text-sm text-xs md:m-5 m-3 h-[23.375rem] py-4 bg-white dark:bg-[#090C2C] dark:text-accent dark:border dark:shadow rounded-2xl md:px-5'>
+      <div className="flex items-center justify-between mb-4 md:px-0 px-3">
         <Heading text={'Sales Trend'} />
         <div className="flex items-center space-x-2">
           <label htmlFor="sort">Sort By</label>

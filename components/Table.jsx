@@ -42,7 +42,7 @@ const people = [
 
 const table = () => {
   return (
-    <div className='h-[23.375rem] py-4 bg-white rounded-2xl overflow-hidden overflow-y-scroll md:mx-5 mx-3 md:mt-0 mt-5 md:w-auto w-[390px]'>
+    <div className='h-[23.375rem] py-4 bg-white dark:bg-[#090C2C] rounded-2xl dark:border dark:shadow overflow-hidden overflow-y-scroll md:mx-5 mx-3 md:mt-0 mt-5 md:w-auto w-[390px]'>
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="">
@@ -74,7 +74,7 @@ const table = () => {
 
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-200 bg-white">
+                <tbody className="divide-y divide-gray-200 bg-white dark:bg-[#090C2C]">
                   {people.map((person) => (
                     <tr key={person.name}>
                       <td className="whitespace-nowrap py-3 pl-4 pr-3 md:text-sm text-xs sm:pl-0">
@@ -83,12 +83,12 @@ const table = () => {
                             <img className="h-11 w-11 rounded-full" src={person.image} alt="" />
                           </div>
                           <div className="ml-4">
-                            <div className="font-medium text-gray-900">{person.name}</div>
+                            <div className="font-medium text-gray-900 dark:text-accent">{person.name}</div>
                           </div>
                         </div>
                       </td>
                       <td className="table-data">
-                        <div className="text-gray-900">{person.date}</div>
+                        <div className="text-gray-900 dark:text-accent">{person.date}</div>
                       </td>
                       <td className="table-data">{person.amount}</td>
                       <td className={`table-data ${person.status === 'Paid' ? 'text-[#34CAA5]' : 'text-[#ED544E]'}`}>{person.status}</td>
